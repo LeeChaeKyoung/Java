@@ -118,7 +118,7 @@ import javax.swing.plaf.synth.SynthSeparatorUI;
     }
 }*/
 
-class OperaborEx12{
+/*class OperatorEx12{
     public static void main(String[] orgs){
         char c1 = 'a';
         char c2 = c1;
@@ -134,5 +134,16 @@ class OperaborEx12{
         System.out.println("c2 = "+c2);
         System.out.println("c3 = "+c3);
     }
+}*/
+
+class Operator15{ // 대문자 변경
+    public static void main(String[] args){
+        char lowerCase = 'a';
+        char upperCase = (char)(lowerCase -32);
+        System.out.println(upperCase);
+    }
 }
+
+
+
 
