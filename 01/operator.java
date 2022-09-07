@@ -136,13 +136,98 @@ import javax.swing.plaf.synth.SynthSeparatorUI;
     }
 }*/
 
-class Operator15{ // 대문자 변경
+/*class Operator15{ // 대문자 변경
     public static void main(String[] args){
         char lowerCase = 'a';
         char upperCase = (char)(lowerCase -32);
         System.out.println(upperCase);
     }
-}
+}*/
+
+/*class OperaterEx16{
+    public static void main(String[] args){
+        float pi = 3.141592f;
+        float shortPi = (int)(pi*1000) / 1000f; // int 형은 무조건 버림이기 때문에 반올림하려면 *1000+0.5 해줘야함
+        System.out.println(shortPi);
+    } 
+}*/
+
+/*lass OperatorEx19{
+    public static void main(String[] args){
+        int x = 10;
+        int y = 8;
+
+        System.out.printf("%d를 %d로 나누면 %n", x, y);
+        System.out.printf("몫은 %d고 나머지는 %d이다.%n", x/y, x%y);
+    }
+}*/
+
+/*class OperatorEx20{
+    public static void main(String[] args){
+        System.out.println(-10%8);
+        System.out.println(10%-8); //나누는수의 부호는 무시됨
+        System.out.println(-10%-8);        
+    }
+}*/
+
+/*class OperatorEx30{
+    static String toBinaryString(int x){
+        String zero = "00000000000000000000000000000000";
+        String tmp = zero + Integer.toBinaryString(x);
+        return tmp.substring(tmp.length()-32);
+    }
+
+    public static void main(String[] args){
+        int dec = 8;
+
+        System.out.printf("%d >> %d = %4d \t%s%n", dec, 0, dec>>0, toBinaryString(dec>>0));
+        System.out.printf("%d >> %d = %4d \t%s%n", dec, 1, dec>>1, toBinaryString(dec>>1));
+        System.out.printf("%d >> %d = %4d \t%s%n", dec, 2, dec>>2, toBinaryString(dec>>2));
+
+        System.out.printf("%d << %d = %4d \t%s%n", dec, 0, dec<<0, toBinaryString(dec<<0));
+        System.out.printf("%d << %d = %4d \t%s%n", dec, 1, dec<<1, toBinaryString(dec<<1));
+        System.out.printf("%d << %d = %4d \t%s%n", dec, 2, dec<<2, toBinaryString(dec<<2));
+        
+        dec = -8;
+
+        System.out.printf("%d >> %d = %4d \t%s%n", dec, 0, dec>>0, toBinaryString(dec>>0));
+        System.out.printf("%d >> %d = %4d \t%s%n", dec, 1, dec>>1, toBinaryString(dec>>1));
+        System.out.printf("%d >> %d = %4d \t%s%n", dec, 2, dec>>2, toBinaryString(dec>>2));
+
+        System.out.printf("%d << %d = %4d \t%s%n", dec, 0, dec<<0, toBinaryString(dec<<0));
+        System.out.printf("%d << %d = %4d \t%s%n", dec, 1, dec<<1, toBinaryString(dec<<1));
+        System.out.printf("%d << %d = %4d \t%s%n", dec, 2, dec<<2, toBinaryString(dec<<2));
+
+        dec = 8;
+        System.out.printf("%d >> %2d = %4d \t%s%n", dec, 0, dec>>0, toBinaryString(dec>>0));
+        System.out.printf("%d >> %2d = %4d \t%s%n", dec, 32, dec>>32, toBinaryString(dec>>32));
+
+        
+    }
+}*/
+
+/*class OperatorEx31{
+    public static void main(String[] args){
+        int dec = 1234;
+        int hex = 0xABCD;
+        int mask = 0xF;
+
+        System.out.printf("hex=%X%n",hex);
+        System.out.printf("%X%n", hex&mask);
+
+        hex = hex>>4;
+        System.out.printf("%X%n", hex&mask);
+        
+        hex = hex>>4;
+        System.out.printf("%X%n", hex&mask);
+
+        hex = hex>>4;
+        System.out.printf("%X%n", hex&mask);
+    }
+}*/
+
+
+
 
 
 
